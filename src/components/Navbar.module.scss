@@ -1,0 +1,16 @@
+.nav {
+    grid-area: n;
+    background: lightblue;
+
+    .item {
+        a {
+            display: block;
+            text-decoration: none;
+        }
+        &.active {
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+}

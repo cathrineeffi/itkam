@@ -7,25 +7,4 @@
   grid-rows: 800px 1fr;
   grid-template-column: 5fr 5fr;
   grid-gap: 10px;
-
-  .header {
-    grid-area: h;
-    background: green;
-  }
-  .nav {
-    grid-area: n;
-    background: lightblue;
-
-    a {
-      display: block;
-    }
-  }
-  .content {
-    grid-area: c;
-    border: 1px solid lightblue;
-
-    img {
-      max-width: 100%;
-    }
-  }
 }
