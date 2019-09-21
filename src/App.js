@@ -1,10 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    <div className="App"></div>
+    <div className="app-wrapper">
+        <Header />
+        <Navbar />
+        <Profile />
+    </div>
   );
 }
 
