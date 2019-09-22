@@ -1,14 +1,16 @@
 .nav {
     grid-area: n;
     background: lightblue;
+    padding: 0 20px;
 
     .item {
         a {
             display: block;
             text-decoration: none;
-        }
-        &.active {
-            a {
+            color: #003c71;
+            padding: 20px 0;
+
+            &.active {
                 font-weight: bold;
             }
         }

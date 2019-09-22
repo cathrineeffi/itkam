@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5388a93-0335-4c45-a6fa-30c7ff07f333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Music/Music.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568720901637</updated>
       <workItem from="1568720904777" duration="2254000" />
-      <workItem from="1569070336511" duration="3290000" />
+      <workItem from="1569070336511" duration="3328000" />
+      <workItem from="1569158648242" duration="5028000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1569070593693</created>
@@ -80,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569070593694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="les 15">
+      <created>1569073651835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569073651835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="d" />
-    <option name="LAST_COMMIT_MESSAGE" value="d" />
+    <MESSAGE value="les 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="les 15" />
   </component>
 </project>
