@@ -1,19 +1,17 @@
 import React from 'react';
-import classes from './Profile.module.scss'
-import Posts from "./Posts/Posts";
+import classes from './ProfileInfo.module.scss'
 
-const Profile = () => {
+const ProfileInfo = () => {
     return (
-        <div>
-            <ProfileInfo />
+        <div className={classes.ProfileInfo}>
+            <img src="https://avatars.mds.yandex.net/get-pdb/1516658/e9ed962e-a32a-4668-a793-b3da9f8f3142/orig" width="80"/>
             <div>
-                <img src="https://s3-us-west-2.amazonaws.com/dailyscene-media/wp-content/uploads/snapchatheader.jpg" class="ava" width="100"/>
-                <p>My Name</p>
-                <Posts/>
+                <p><b>My Name</b></p>
+                <p>descripton</p>
             </div>
         </div>
     )
 }
 
-export default Profile;
+export default ProfileInfo;
 
