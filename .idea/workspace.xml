@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5388a93-0335-4c45-a6fa-30c7ff07f333" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.scss" afterDir="false" />
-    </list>
+    <list default="true" id="f5388a93-0335-4c45-a6fa-30c7ff07f333" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +24,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile" />
-      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Navbar" />
-      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Header" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts\Post" />
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts" />
       <recent name="C:\Users\ya\Documents\Любимая работа\Проекты\itkam\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\redux" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Navbar" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -63,7 +62,7 @@
       <workItem from="1568720904777" duration="2254000" />
       <workItem from="1569070336511" duration="3328000" />
       <workItem from="1569158648242" duration="5100000" />
-      <workItem from="1569646381570" duration="270000" />
+      <workItem from="1569646381570" duration="5761000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1569070593693</created>
@@ -86,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569164631655</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="les 20">
+      <created>1569646776908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569646776908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

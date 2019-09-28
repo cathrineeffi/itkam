@@ -1,0 +1,55 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    .dialogItems {
+        .item {
+            padding: 20px 0;
+            display: block;
+            color: #003c71;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            .img {
+                width: 80px;
+                height: 80px;
+                position: relative;
+                overflow: hidden;
+                margin-right: 10px;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                    min-height: 100%;
+                    min-width: 100%;
+                }
+            }
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.messages {
+    padding: 20px;
+    border: 1px solid green;
+
+    .message {
+        background: #6bea6b;
+        display: flex;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid green;
+        width: 80%;
+        box-sizing: border-box;
+        
+        &.my {
+            justify-content: flex-end;
+            background: #4cc54c;
+            margin-left: 20%;
+        }
+    }
+}
