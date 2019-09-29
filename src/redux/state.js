@@ -55,4 +55,14 @@ let state = {
     }
 };
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 6,
+        txt: postMessage,
+        img: 'https://otvet.imgsmail.ru/download/263951837_910c5e9d089a3e6439947862d496f607_800.png',
+        likes: 0
+    }
+    state.profilePage.postsData.push(newPost);
+}
+
 export default state;
