@@ -10,7 +10,7 @@ let state = {
             {
                 id: 2,
                 txt: 'post2 sdasdasdasd sadasdasd  asdasdasdasd sadasdasdas',
-                img: 'https://24enota.ru/uploads/content/1055.jpg'
+                img: 'https://c1.hotpng.com/preview/939/618/467/totoro-pusheen-the-cat-sticker-png-clipart.jpg'
             },
             {
                 id: 3,
@@ -26,7 +26,7 @@ let state = {
             {
                 id: 5,
                 txt: 'post5 sdasdasdasd sadasdasd  asdasdasdasd sadasdasdas',
-                img: 'https://24enota.ru/uploads/content/1055.jpg'
+                img: 'https://c1.hotpng.com/preview/939/618/467/totoro-pusheen-the-cat-sticker-png-clipart.jpg'
             }
         ],
     },
