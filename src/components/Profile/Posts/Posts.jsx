@@ -13,8 +13,8 @@ const Posts = (props) => {
     return (
         <div className="posts">
             <h2>My posts</h2>
-            <button onClick={addPost}>Add Post</button>
             <textarea ref={newPostElement}></textarea>
+            <button onClick={addPost}>Add Post</button>
             {postsElement}
         </div>
     )
