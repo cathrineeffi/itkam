@@ -1,3 +1,7 @@
+let rerenderEntireTree = () => {
+    console.log('State change');
+}
+
 let state = {
     profilePage: {
         postsData: [
@@ -29,6 +33,7 @@ let state = {
                 img: 'https://c1.hotpng.com/preview/939/618/467/totoro-pusheen-the-cat-sticker-png-clipart.jpg'
             }
         ],
+        newPostText: 'it-kamasutra.com'
     },
     dialogsPage: {
         dialogsData: [
@@ -43,7 +48,8 @@ let state = {
             {id: 3, message: 'Yo'},
             {id: 4, message: 'How are you??', my: true},
             {id: 4, message: 'GGGGGG', my: true}
-        ]
+        ],
+        newMessage: 'sdfsdfsdf'
     },
     sidebar: {
         friends: [
@@ -55,14 +61,41 @@ let state = {
     }
 };
 
-export let addPost = (postMessage) => {
+export const addPost = () => {
     let newPost = {
         id: 6,
-        txt: postMessage,
+        txt: state.profilePage.newPostText,
         img: 'https://otvet.imgsmail.ru/download/263951837_910c5e9d089a3e6439947862d496f607_800.png',
         likes: 0
     }
     state.profilePage.postsData.push(newPost);
+    state.profilePage.newPostText = "";
+    rerenderEntireTree(state);
+}
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export const addMessage = () => {
+    let newMes = {
+        id: 4,
+        message: state.dialogsPage.newMessage,
+        my: true
+    }
+    state.dialogsPage.messagesData.push(newMes);
+    state.profilePage.newMessage = "";
+    rerenderEntireTree(state);
+}
+
+export const updateNewMessage = (newText) => {
+    state.dialogsPage.newMessage = newText;
+    rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 }
 
 export default state;
