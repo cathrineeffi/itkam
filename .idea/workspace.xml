@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5388a93-0335-4c45-a6fa-30c7ff07f333" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +161,7 @@
       <workItem from="1569070336511" duration="3328000" />
       <workItem from="1569158648242" duration="5100000" />
       <workItem from="1569646381570" duration="5761000" />
-      <workItem from="1599037878531" duration="19172000" />
+      <workItem from="1599037878531" duration="21266000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1569070593693</created>
@@ -222,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599624900359</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="les 38">
+      <created>1599642114537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599642114537</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,21 +251,27 @@
     <MESSAGE value="les32" />
     <MESSAGE value="test" />
     <MESSAGE value="les 35" />
-    <option name="LAST_COMMIT_MESSAGE" value="les 35" />
+    <MESSAGE value="les 39" />
+    <MESSAGE value="les 38" />
+    <option name="LAST_COMMIT_MESSAGE" value="les 38" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599623840245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599623840245" />
-    <state x="585" y="90" key="CommitChangelistDialog2" timestamp="1599624899709">
+    <state x="585" y="90" key="CommitChangelistDialog2" timestamp="1599642113869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599624899709" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599624902180">
+    <state x="585" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599642113869" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599642115822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599624902180" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599642115822" />
+    <state x="561" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599643026292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="561" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599643026292" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1599640809548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
