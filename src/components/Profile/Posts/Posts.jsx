@@ -3,15 +3,16 @@ import classes from './Posts.module.scss'
 import Post from "./Post/Post";
 
 const Posts = (props) => {
+
     let postsElement = props.profilePage.postsData.map( p => <Post txt={p.txt} img={p.img} likes={p.likes} />);
     let newPostElement = React.createRef();
     let addPost = () => {
-        props.addPost();
+        props.dispatch({type: 'ADD-POST'});
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text});
     }
 
     return (
