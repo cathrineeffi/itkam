@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5388a93-0335-4c45-a6fa-30c7ff07f333" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
@@ -38,7 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/Posts/Post" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,17 +49,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts\Post" />
-      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts" />
-      <recent name="C:\Users\ya\Documents\Любимая работа\Проекты\itkam\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\redux" />
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src" />
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile" />
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Navbar" />
       <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ekaterina.Efimova\itkam\src\redux" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts\Post" />
+      <recent name="C:\Users\dest\Documents\it-kamasutra\itkam\src\components\Profile\Posts" />
+      <recent name="C:\Users\ya\Documents\Любимая работа\Проекты\itkam\src\components" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -161,7 +165,7 @@
       <workItem from="1569070336511" duration="3328000" />
       <workItem from="1569158648242" duration="5100000" />
       <workItem from="1569646381570" duration="5761000" />
-      <workItem from="1599037878531" duration="21266000" />
+      <workItem from="1599037878531" duration="24871000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1569070593693</created>
@@ -226,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599642114537</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="les 39">
+      <created>1599644620916</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599644620916</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,23 +262,23 @@
     <MESSAGE value="les32" />
     <MESSAGE value="test" />
     <MESSAGE value="les 35" />
-    <MESSAGE value="les 39" />
     <MESSAGE value="les 38" />
-    <option name="LAST_COMMIT_MESSAGE" value="les 38" />
+    <MESSAGE value="les 39" />
+    <option name="LAST_COMMIT_MESSAGE" value="les 39" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599623840245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599623840245" />
-    <state x="585" y="90" key="CommitChangelistDialog2" timestamp="1599642113869">
+    <state x="585" y="90" key="CommitChangelistDialog2" timestamp="1599644620183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599642113869" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599642115822">
+    <state x="585" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599644620183" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599644621795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599642115822" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-840.1080.1880/-1920.0.1920.1040/3000.0.1920.1040@0.0.1920.1040" timestamp="1599644621795" />
     <state x="561" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599643026292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
