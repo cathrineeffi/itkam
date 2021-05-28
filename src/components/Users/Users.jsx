@@ -1,36 +1,39 @@
 import React from "react";
 import userImage from './../../assets/user.png'
 import classes from "./Users.module.scss";
-import * as axios from "axios";
 
-class Users extends React.Component {
-    componentDidMount() {
-        axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-            this.props.setUsers(response.data.items);
-        })
+const Users = (props) => {
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+    let pages = [];
+
+    for (let i=1; i<=pagesCount; i++) {
+        pages.push(i)
     }
 
-    render() {
-        return (
+    return (
+        <div>
+            <ul className={classes.pagination}>
+                {pages.map(p => <li className={p == props.currentPage && classes.selected} onClick={() => props.onPageChanged(p)}>{p}</li>)}
+            </ul>
             <div className={classes.users}>
-                {this.props.users.map(u => (
+                {props.users.map(u => (
                         <div key={u.id} className={classes.user}>
-                            <img src={u.image ? u.image : userImage} alt=""/>
+                            <img src={u.photos.small ? u.photos.small : userImage} alt=""/>
                             <div className={classes.body}>
                                 <p>{u.name}</p>
                                 <span>{u.status ? u.status : 'Здесь должен быть статус'}</span>
                             </div>
                             {u.followed ?
-                                <button className={classes.unfollow} onClick={() => this.props.unfollow(u.id)}>Unfollow</button>
+                                <button className={classes.unfollow} onClick={() => props.unfollow(u.id)}>Unfollow</button>
                                 :
-                                <button className={classes.follow} onClick={() => this.props.follow(u.id)}>Follow</button>
+                                <button className={classes.follow} onClick={() => props.follow(u.id)}>Follow</button>
                             }
                         </div>
                     )
                 )}
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-export default Users
+export default Users;
