@@ -1,13 +1,14 @@
 import React from 'react';
 import classes from './ProfileInfo.module.scss'
+import profileAvatar from '../../../assets/profile-avatar.gif'
 
 const ProfileInfo = (props) => {
     return (
         <div className={classes.ProfileInfo}>
-            <img src={props.profile.photos ? props.profile.photos.small : 'https://avatars.mds.yandex.net/get-pdb/1516658/e9ed962e-a32a-4668-a793-b3da9f8f3142/orig'} width="80"/>
+            <img src={props.profile?.photos?.small ? props.profile.photos.small : profileAvatar} width="80"/>
             <div>
                 <p><b>{props.profile.fullName}</b></p>
-                <p>{props.profile.aboutMe}</p>
+                <p class={classes.status}>{props.profile.aboutMe ? props.profile.aboutMe : 'Здесь должен быть статус'}</p>
             </div>
         </div>
     )

@@ -4,11 +4,16 @@ import {addPost, setUserProfile, toggleIsFetching, updateNewPostText} from "../.
 import Profile from "./Profile";
 import * as axios from "axios";
 import Loader from "../Common/Loader/Loader";
+import {withRouter} from "react-router";
 
 class ProfileAPIContainer extends React.Component {
     componentDidMount() {
+        let userId = this.props.match.params.userId;
+        if (!userId) {
+            userId = 17600;
+        }
         this.props.toggleIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/2`).then(response => {
+        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/`+userId).then(response => {
             this.props.toggleIsFetching(false)
             this.props.setUserProfile(response.data);
         })
@@ -31,7 +36,9 @@ let mapStateToProps = (state) => {
     }
 }
 
-const ProfileContainer = connect(mapStateToProps, {addPost, updateNewPostText, setUserProfile, toggleIsFetching})(ProfileAPIContainer);
+const WidthURLDataContainerComponent = withRouter(ProfileAPIContainer);
+
+const ProfileContainer = connect(mapStateToProps, {addPost, updateNewPostText, setUserProfile, toggleIsFetching})(WidthURLDataContainerComponent);
 
 export default ProfileContainer;
 
