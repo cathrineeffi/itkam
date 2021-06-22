@@ -45,11 +45,20 @@
             cursor: pointer;
 
             &.follow {
-
+                &:disabled {
+                    color: #fff;
+                    border: 2px solid lightgrey;
+                    background: lightgrey;
+                }
             }
             &.unfollow {
                 background: transparent;
                 color: #84c37d;
+
+                &:disabled {
+                    color: lightgrey;
+                    border: 2px solid lightgrey;
+                }
             }
         }
     }
@@ -61,6 +70,8 @@
     padding: 0;
     color: #3b713b;
     margin: 0 0 20px 0;
+    width: calc(100vw - 320px);
+    overflow: hidden;
 
     li {
         margin-left: 10px;
