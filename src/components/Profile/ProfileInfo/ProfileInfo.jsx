@@ -8,7 +8,7 @@ const ProfileInfo = (props) => {
             <img src={props.profile?.photos?.small ? props.profile.photos.small : profileAvatar} width="80"/>
             <div>
                 <p><b>{props.profile.fullName}</b></p>
-                <p class={classes.status}>{props.profile.aboutMe ? props.profile.aboutMe : 'Здесь должен быть статус'}</p>
+                <p className={classes.status}>{props.profile.aboutMe ? props.profile.aboutMe : 'Здесь должен быть статус'}</p>
             </div>
         </div>
     )
