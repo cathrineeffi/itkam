@@ -8,6 +8,7 @@ import {
     getUsers
 } from "../../redux/users-reduсer";
 import Loader from "../Common/Loader/Loader";
+import {Redirect} from "react-router";
 
 class UsersAPIContainer extends React.Component {
     componentDidMount() {
@@ -20,6 +21,8 @@ class UsersAPIContainer extends React.Component {
     }
 
     render() {
+        if (!this.props.isAuth) return <Redirect to={"/login"} />
+
         return (
             <>
                 {this.props.isFetching ? <Loader/> :
@@ -46,7 +49,8 @@ let mapStateToProps = (state) => {
         totalUsersCount: state.usersPage.totalUsersCount,
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching,
-        folowingInProgress: state.usersPage.folowingInProgress
+        folowingInProgress: state.usersPage.folowingInProgress,
+        isAuth: state.auth.isAuth
     }
 }
 

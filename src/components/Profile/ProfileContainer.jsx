@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {addPost, getProfile, updateNewPostText} from "../../redux/profile-reducer";
 import Profile from "./Profile";
 import Loader from "../Common/Loader/Loader";
-import {withRouter} from "react-router";
+import {Redirect, withRouter} from "react-router";
 
 class ProfileAPIContainer extends React.Component {
     componentDidMount() {
@@ -15,6 +15,8 @@ class ProfileAPIContainer extends React.Component {
     }
 
     render() {
+        if (!this.props.isAuth) return <Redirect to={"/login"} />
+
         return (
             <>
                 {this.props.profilePage.isFetching ? <Loader/> :
@@ -28,6 +30,7 @@ class ProfileAPIContainer extends React.Component {
 let mapStateToProps = (state) => {
     return {
         profilePage: state.profilePage,
+        isAuth: state.auth.isAuth
     }
 }
 
