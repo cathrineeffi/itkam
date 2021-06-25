@@ -4,31 +4,19 @@ import Users from "./Users";
 import {
     follow,
     unfollow,
-    setUsers,
     setCurrentPage,
-    setTotalUsersCount,
-    toggleIsFetching, toggleFolowingProgress
+    getUsers
 } from "../../redux/users-reduсer";
 import Loader from "../Common/Loader/Loader";
-import {usersAPI} from "../../api/api";
 
 class UsersAPIContainer extends React.Component {
     componentDidMount() {
-        this.props.toggleIsFetching(true)
-        usersAPI.getUsers(this.props.currentPage, this.props.pageSize).then(data => {
-            this.props.toggleIsFetching(false)
-            this.props.setUsers(data.items);
-            this.props.setTotalUsersCount(data.totalCount);
-        })
+        this.props.getUsers(this.props.currentPage, this.props.pageSize);
     }
 
-    onPageChanged = (p) => {
-        this.props.setCurrentPage(p);
-        this.props.toggleIsFetching(true)
-        usersAPI.getUsers(p, this.props.pageSize).then(data => {
-            this.props.setUsers(data.items);
-            this.props.toggleIsFetching(false)
-        })
+    onPageChanged = (pageNumber) => {
+        this.props.setCurrentPage(pageNumber);
+        this.props.getUsers(pageNumber, this.props.pageSize);
     }
 
     render() {
@@ -43,7 +31,6 @@ class UsersAPIContainer extends React.Component {
                         unfollow={this.props.unfollow}
                         follow={this.props.follow}
                         currentPage={this.props.currentPage}
-                        toggleFolowingProgress={this.props.toggleFolowingProgress}
                         folowingInProgress={this.props.folowingInProgress}
                     />
                 }
@@ -63,6 +50,6 @@ let mapStateToProps = (state) => {
     }
 }
 
-const UsersContainer = connect(mapStateToProps, {follow, unfollow, setUsers, setCurrentPage, setTotalUsersCount, toggleIsFetching, toggleFolowingProgress})(UsersAPIContainer);
+const UsersContainer = connect(mapStateToProps, {follow, unfollow, setCurrentPage, getUsers})(UsersAPIContainer);
 
 export default UsersContainer

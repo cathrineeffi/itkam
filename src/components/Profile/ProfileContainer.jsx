@@ -1,10 +1,9 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {addPost, setUserProfile, toggleIsFetching, updateNewPostText} from "../../redux/profile-reducer";
+import {addPost, getProfile, updateNewPostText} from "../../redux/profile-reducer";
 import Profile from "./Profile";
 import Loader from "../Common/Loader/Loader";
 import {withRouter} from "react-router";
-import {profileAPI} from "../../api/api";
 
 class ProfileAPIContainer extends React.Component {
     componentDidMount() {
@@ -12,11 +11,7 @@ class ProfileAPIContainer extends React.Component {
         if (!userId) {
             userId = 17600;
         }
-        this.props.toggleIsFetching(true)
-        profileAPI.getProfile(userId).then(data => {
-            this.props.toggleIsFetching(false)
-            this.props.setUserProfile(data);
-        })
+        this.props.getProfile(userId);
     }
 
     render() {
@@ -38,7 +33,7 @@ let mapStateToProps = (state) => {
 
 const WidthURLDataContainerComponent = withRouter(ProfileAPIContainer);
 
-const ProfileContainer = connect(mapStateToProps, {addPost, updateNewPostText, setUserProfile, toggleIsFetching})(WidthURLDataContainerComponent);
+const ProfileContainer = connect(mapStateToProps, {addPost, updateNewPostText, getProfile})(WidthURLDataContainerComponent);
 
 export default ProfileContainer;
 
