@@ -9,6 +9,8 @@ import {
 } from "../../redux/users-reduсer";
 import Loader from "../Common/Loader/Loader";
 import {Redirect} from "react-router";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import Dialogs from "../Dialogs/Dialogs";
 
 class UsersAPIContainer extends React.Component {
     componentDidMount() {
@@ -21,8 +23,6 @@ class UsersAPIContainer extends React.Component {
     }
 
     render() {
-        if (!this.props.isAuth) return <Redirect to={"/login"} />
-
         return (
             <>
                 {this.props.isFetching ? <Loader/> :
@@ -50,10 +50,9 @@ let mapStateToProps = (state) => {
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching,
         folowingInProgress: state.usersPage.folowingInProgress,
-        isAuth: state.auth.isAuth
     }
 }
 
-const UsersContainer = connect(mapStateToProps, {follow, unfollow, setCurrentPage, getUsers})(UsersAPIContainer);
+const UsersContainer = withAuthRedirect(connect(mapStateToProps, {follow, unfollow, setCurrentPage, getUsers})(UsersAPIContainer));
 
 export default UsersContainer

@@ -4,6 +4,7 @@ import {addPost, getProfile, updateNewPostText} from "../../redux/profile-reduce
 import Profile from "./Profile";
 import Loader from "../Common/Loader/Loader";
 import {Redirect, withRouter} from "react-router";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 class ProfileAPIContainer extends React.Component {
     componentDidMount() {
@@ -15,8 +16,6 @@ class ProfileAPIContainer extends React.Component {
     }
 
     render() {
-        if (!this.props.isAuth) return <Redirect to={"/login"} />
-
         return (
             <>
                 {this.props.profilePage.isFetching ? <Loader/> :
@@ -30,13 +29,12 @@ class ProfileAPIContainer extends React.Component {
 let mapStateToProps = (state) => {
     return {
         profilePage: state.profilePage,
-        isAuth: state.auth.isAuth
     }
 }
 
 const WidthURLDataContainerComponent = withRouter(ProfileAPIContainer);
 
-const ProfileContainer = connect(mapStateToProps, {addPost, updateNewPostText, getProfile})(WidthURLDataContainerComponent);
+const ProfileContainer = withAuthRedirect(connect(mapStateToProps, {addPost, updateNewPostText, getProfile})(WidthURLDataContainerComponent));
 
 export default ProfileContainer;
 
